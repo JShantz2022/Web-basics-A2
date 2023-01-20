@@ -1,0 +1,18 @@
+main figure {
+	float: left;
+	/* flex display gotten from pexels.com css */
+	display: flex;
+	position: relative;
+	/* z-index gotten from sevenspark.com */
+	z-index:30;
+}
+
+main figcaption {
+	display: block;
+	padding: .5em;
+}
+
+main img:focus, main img:hover {
+	width: 200%;
+	height:auto;
+}

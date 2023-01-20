@@ -1,0 +1,131 @@
+body {
+	/* Found font at fomts.google.com and liked it so I decided to use it*/
+	font-family: Langar;
+}
+
+header{
+	padding: 1.5em 2em;
+	text-align: center;
+}
+
+header h1 {
+	width: 89%;
+}
+
+header img {
+	float: left;
+	margin-right: 5em;
+	/* got colour from Google's colour picker */
+	border: .5px solid #ff8000;
+}
+
+#nav_menu ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	/* z-index gotten from sevensparks.com */
+	z-index:50;
+}
+
+#nav_menu ul li { 
+	float: left;
+	width: 33.33%;
+}
+
+#nav_menu ul li a{
+	text-align: center;
+	display: block;
+	padding: 1em 0;
+	text-decoration: none;
+	/* got colour from Google's colour picker */
+	background-color: #ff8000;
+	color: white;
+	font-weight: bold;
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+
+/* Gotten from Murach's HTML5 and CSS3 (4th Edition) */
+#nav_menu ul ul li {
+	float: none;
+	position: relative;
+}
+
+/* Gotten from Murach's HTML5 and CSS3 (4th Edition) */
+#nav_menu ul ul li ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#nav_menu ul li a:hover {
+	/* got colour from Google's colour picker */
+	background-color: #008cff;
+}
+
+p {
+	padding: 5px;
+}
+
+aside {
+	float:left;
+	width:70px;
+	border-right: 1px solid #ff8000;
+	margin-right:5px;
+}
+
+aside figure {
+	float: left;
+	padding: 5px;
+	margin: 5px;
+}
+
+aside figure a img {
+	border: .5px solid #ff8000;
+}
+
+aside figcaption {
+	display: block;
+	font-size: 80%;
+}
+div {
+	width:20%;
+	border-left: 1px solid #ff8000;
+	float: right;
+}
+
+main{
+	width:74%;
+	float: left;
+}
+
+main img {
+	border: .5px solid #ff8000;
+}
+
+footer {
+	clear:both;
+	background-color: #ff8000;
+}
+
+footer p {
+	font-size: 75%;
+	color: white;
+	text-align: center;
+}
